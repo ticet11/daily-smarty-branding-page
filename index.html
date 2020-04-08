@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>DailySmarty</title>
+    <title>CSS Grid</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
@@ -34,11 +34,31 @@
       .style-details {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 75px;
+        margin-bottom: 75px;
+      }
+
+      .style-details-text {
+        text-align: right;
+      }
+
+      .style-details-text h3 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+
+      .style-details-text div{
+        color: #808080;
+        font-weight: normal;
+
       }
 
       .style-details-logo img {
         width: 100%;
       }
+
+
     </style>
   </head>
 
@@ -63,23 +83,24 @@
           Please see the guidelines outlined below (logo assets can be
           downloaded below):
         </p>
-      </div>
-      <div class="style-details">
-        <div class="style-details-text">
-          <h3>Primary Logo</h3>
-          <div>White Space = 1/4 logo width</div>
-          <div>White logo on primary blue</div>
 
-          <h3>Primary Color</h3>
-          <div>#0079FF</div>
-          <div>RGB 0, 121, 255</div>
+        <div class="style-details">
+          <div class="style-details-text">
+            <h3>Primary Logo</h3>
+            <div>White Space = 1/4 logo width</div>
+            <div>White logo on primary blue</div>
 
-          <h3>Name</h3>
-          <div>Capitalize “D” and “S”</div>
-          <div>No space between the words</div>
-        </div>
-        <div class="style-details-logo">
-          <img src="images/logo-with-margin.png" alt="logo with margins">
+            <h3>Primary Color</h3>
+            <div>#0079FF</div>
+            <div>RGB 0, 121, 255</div>
+
+            <h3>Name</h3>
+            <div>Capitalize “D” and “S”</div>
+            <div>No space between the words</div>
+          </div>
+          <div class="style-details-logo">
+            <img src="images/logo-with-margin.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
