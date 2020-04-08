@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CSS Grid</title>
+    <title>Daily Smarty Logos and Branding</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
@@ -48,17 +48,26 @@
         margin-bottom: 10px;
       }
 
-      .style-details-text div{
+      .style-details-text div {
         color: #808080;
         font-weight: normal;
-
       }
 
       .style-details-logo img {
         width: 100%;
       }
 
+      .dos-donts-wrapper {
+        margin-top: 75px;
+        margin-bottom: 75px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        gap: 30px;
+      }
 
+      .dont-image-box img {
+        width: 50%;
+      }
     </style>
   </head>
 
@@ -100,6 +109,40 @@
           </div>
           <div class="style-details-logo">
             <img src="images/logo-with-margin.png" alt="" />
+          </div>
+        </div>
+        <div class="dos-donts-wrapper">
+          <div class="dos-donts-list">
+            <div class="dos-donts-heading">
+              Logo Do's
+            </div>
+            <ul>
+              <li>Provide adequate white space surrounding the logo.</li>
+              <li>Icon must always be white.</li>
+              <li>Keep a large size so the icon doesn’t get obscured.</li>
+              <li>Place logo on white or light background colors.</li>
+            </ul>
+          </div>
+          <div class="dos-donts-list">
+            <div class="dos-donts-heading">
+              Logo Dont's
+            </div>
+            <ul>
+              <li>Strech or scale the logo non-uniformely.</li>
+              <li>Crop or partially cover the logo with other objects.</li>
+              <li>Alter the logo or wordmark color to anything other than our primary color.</li>
+            </ul>
+          </div>
+          <div class="donts-images">
+            <div class="dont-image-box">
+              <img src="images/dont_stretch.png" alt="stretched logo">
+            </div>
+            <div class="dont-image-box">
+              <img src="images/dont_crop.png" alt="cropped logo">
+            </div>
+            <div class="dont-image-box">
+              <img src="images/dont_color.png" alt="green logo">
+            </div>
           </div>
         </div>
       </div>
